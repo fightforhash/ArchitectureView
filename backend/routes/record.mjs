@@ -84,7 +84,7 @@ router.post("/chat", async (req, res) => {
     // Send the request to the Gemma 2:2b model
     const axiosResponse = await axios({
       method: "post",
-      url: "https://b95f83fc3cacca.lhr.life/api/generate",
+      url: "https://07df0addcdd1f9.lhr.life/api/generate",
       data: {
         model: "gemma2:2b",
         prompt: augmentedPrompt,

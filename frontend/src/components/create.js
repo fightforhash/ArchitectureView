@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
  
@@ -9,6 +8,7 @@ export default function Create() {
    level: "",
  });
  const navigate = useNavigate();
+ const backendUrl = process.env.REACT_APP_BACKEND_URL;
  
  // These methods will update the state properties.
  function updateForm(value) {
@@ -24,7 +24,7 @@ export default function Create() {
    // When a post request is sent to the create url, we'll add a new record to the database.
    const newPerson = { ...form };
  
-   await fetch("https://f4c59nb7-5050.usw2.devtunnels.ms/record", {
+   await fetch(`${backendUrl}/record`, {
      method: "POST",
      headers: {
        "Content-Type": "application/json",

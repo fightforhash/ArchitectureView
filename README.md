@@ -50,5 +50,5 @@
 
 ## Environment Variables Configuration
 ⚠️ **Important**: URLs change depending on Codespaces instance!
-- Update `REACT_APP_BACKEND_URL` in both `client/example.env` and `frontend/.env` files with your current Codespaces backend URL for proper functionality.
+- Update `REACT_APP_BACKEND_URL` in `frontend/.env` file with your current Codespaces backend URL for proper functionality.
 - Example: `REACT_APP_BACKEND_URL=https://your-codespace-name-5050.app.github.dev`
